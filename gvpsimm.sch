@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:gvpsimm-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L memory:SIMM64_EDGE J1
+L gvpsimm-rescue:SIMM64_EDGE-memory J1
 U 1 1 5D395819
 P 2350 2000
 F 0 "J1" H 2600 2200 50  0000 C CNN
@@ -235,7 +234,7 @@ Wire Wire Line
 Text Label 3150 2250 2    50   ~ 0
 DQ0
 $Comp
-L memory:HM514400_alt U1
+L gvpsimm-rescue:HM514400_alt-memory U1
 U 1 1 5D3B5A01
 P 4700 1250
 F 0 "U1" H 4800 1450 50  0000 C CNN
@@ -285,7 +284,7 @@ Wire Wire Line
 Wire Wire Line
 	6800 1700 7100 1700
 $Comp
-L memory:HM514400_alt U2
+L gvpsimm-rescue:HM514400_alt-memory U2
 U 1 1 5D3B6C79
 P 6350 1250
 F 0 "U2" H 6450 1450 50  0000 C CNN
@@ -333,7 +332,7 @@ Wire Wire Line
 Wire Wire Line
 	8450 1700 8750 1700
 $Comp
-L memory:HM514400_alt U3
+L gvpsimm-rescue:HM514400_alt-memory U3
 U 1 1 5D3C02FF
 P 8000 1250
 F 0 "U3" H 8100 1450 50  0000 C CNN
@@ -383,7 +382,7 @@ Wire Wire Line
 Wire Wire Line
 	10100 1700 10400 1700
 $Comp
-L memory:HM514400_alt U4
+L gvpsimm-rescue:HM514400_alt-memory U4
 U 1 1 5D3C0330
 P 9650 1250
 F 0 "U4" H 9750 1450 50  0000 C CNN
@@ -435,7 +434,7 @@ Wire Wire Line
 Wire Wire Line
 	5150 4500 5450 4500
 $Comp
-L memory:HM514400_alt U5
+L gvpsimm-rescue:HM514400_alt-memory U5
 U 1 1 5D3D1685
 P 4700 4050
 F 0 "U5" H 4800 4250 50  0000 C CNN
@@ -487,7 +486,7 @@ Wire Wire Line
 Wire Wire Line
 	6800 4500 7100 4500
 $Comp
-L memory:HM514400_alt U6
+L gvpsimm-rescue:HM514400_alt-memory U6
 U 1 1 5D3D16B6
 P 6350 4050
 F 0 "U6" H 6450 4250 50  0000 C CNN
@@ -539,7 +538,7 @@ Wire Wire Line
 Wire Wire Line
 	8450 4500 8750 4500
 $Comp
-L memory:HM514400_alt U7
+L gvpsimm-rescue:HM514400_alt-memory U7
 U 1 1 5D3D16E7
 P 8000 4050
 F 0 "U7" H 8100 4250 50  0000 C CNN
@@ -591,7 +590,7 @@ Wire Wire Line
 Wire Wire Line
 	10100 4500 10400 4500
 $Comp
-L memory:HM514400_alt U8
+L gvpsimm-rescue:HM514400_alt-memory U8
 U 1 1 5D3D1718
 P 9650 4050
 F 0 "U8" H 9750 4250 50  0000 C CNN
@@ -1343,4 +1342,15 @@ Text Notes 4750 7550 0    50   ~ 0
 This work is licensed under the Creative Commons\nAttribution-ShareAlike 4.0 International License.\nTo view a copy of this license, visit\nhttp://creativecommons.org/licenses/by-sa/4.0/\nor send a letter to Creative Commons, PO Box 1866,\nMountain View, CA 94042, USA
 Text Notes 7150 6950 0    50   ~ 0
 BY @TubeTimeUS\n
+$Comp
+L GW_RAM:DRAM-4Mx4-SOP-24 U?
+U 1 1 5EBDE0C9
+P 12450 2250
+F 0 "U?" H 12450 3017 50  0000 C CNN
+F 1 "DRAM-4Mx4-SOP-24" H 12450 2926 50  0000 C CNN
+F 2 "stdpads:SOP-24-26-300mil" H 12450 1600 50  0001 C CNN
+F 3 "https://shop.micross.com/pdf/AS4C4M4.pdf" H 12450 1650 50  0001 C CNN
+	1    12450 2250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
